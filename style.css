@@ -6,6 +6,10 @@
 .group:after {content: ""; display: table; clear: both;}
 .clear {clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0;}
 
+html, body {
+    height: 100%;
+}
+
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #464646;
@@ -40,6 +44,7 @@ ul.feed {
 }
 ul.feed li {
 	width: 31.3%;
+    height: 100%;
 	float: left;
 	margin: 1%;
 	position: relative;
@@ -47,7 +52,7 @@ ul.feed li {
 ul.feed li img {
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 /* IMAGE OVERLAY */
@@ -61,14 +66,14 @@ ul.feed li img {
     transition: opacity 0.2s ease-in-out;
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     margin: auto;
     padding: 25% 0;
     background: rgba(0,0,0,0.85);
     width: 75%;
-    height: auto;
+    height: 100%;
     text-align: center;
     display: table;
 }

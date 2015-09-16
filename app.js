@@ -23,7 +23,7 @@ function loadInstagram() {
         // IMAGE FADE
         complete: function(){
             $('.paging .view-more').text('View More');
-            $('.container').fadeIn(1000);
+            $('.content').fadeIn(1000);
             $('.feed li a img').fadeIn(1000);
             $('.header .title').text('#' + tag);
         }
