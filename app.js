@@ -4,7 +4,7 @@ instagram = {
     apiHost: 'https://api.instagram.com'
 };
 
-// VARIABLES FOR TAG AND MIN TAG ID
+// VARIABLES FOR MIN
 var min = '';
 
 function loadInstagram() {
