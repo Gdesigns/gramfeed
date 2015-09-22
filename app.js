@@ -5,15 +5,14 @@ instagram = {
 };
 
 // VARIABLES FOR TAG AND MIN TAG ID
-var tag = 'wanderingconquistador',
-    min = '';
+var min = '';
 
 function loadInstagram() {
 
     // PULL IMAGES FROM INSTAGRAM
     $.ajax({
         type: "GET",
-        url: instagram.apiHost + "/v1/tags/" + tag + "/media/recent",
+        url: instagram.apiHost + "/v1/users/297112841/media/recent/?access_token=297112841.acaed12.e2ee3a1638a54a6095c92d545b68b1ba" + "&count=20",
         data: {'client_id': instagram.clientID, 'max_tag_id': min},
         dataType: "jsonp",
         beforeSend: function() {
@@ -25,7 +24,6 @@ function loadInstagram() {
             $('.paging .view-more').text('View More');
             $('.content').fadeIn(1000);
             $('.feed li a img').fadeIn(1000);
-            $('.header .title').text('#' + tag);
         }
 
     // ON SUCCESS DISPLAY PHOTOS
